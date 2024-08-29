@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Music App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <nav class="sidebar">
+            <h2>My Music</h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Browse</a></li>
+                <li><a href="#">Library</a></li>
+            </ul>
+        </nav>
+
+        <main class="main-content">
+            <div class="search-bar">
+                <input type="text" placeholder="Search music..." id="searchInput">
+            </div>
+
+            <div class="current-track">
+                <img id="albumArt" src="assest/IMG_1593.jpg" alt="Album Art">
+                <div class="track-info">
+                    <h4 id="trackTitle">The Sceret of Us</h4>
+                    <p id="artistName">Gracie Abrams</p>
+                </div>
+            </div>
+
+            <div class="controls">
+                <button id="prevBtn">⏮️</button>
+                <button id="playPauseBtn">⏯️</button>
+                <button id="nextBtn">⏭️</button>
+                <input type="range" id="seekBar" value="0">
+                <span id="currentTime">0:00</span> / <span id="totalDuration">0:00</span>
+                <input type="range" id="volumeControl" value="100">
+            </div>
+
+            <div class="playlist">
+                <ul id="playlist">
+                    <a href="https://music.apple.com/ng/album/i-love-you-im-sorry/1743054543?i=1743054747" target="_blank">
+
+                    </a>
+                </ul>
+            </div>
+            <div>
+                <a id="track-link" href="#" target="_blank"></a>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
